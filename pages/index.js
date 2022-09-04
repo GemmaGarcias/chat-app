@@ -13,7 +13,6 @@ function Home({ messages }) {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    console.log(stateMessages, "hols primera vez");
     const fetchUser = async () => {
       try {
         const amplifyUser = await Auth.currentAuthenticatedUser();
